@@ -84,7 +84,7 @@ class App extends Component {
                     const num = Math.floor(Math.random() * 100000);
                     this.takeAction("create",[num,"this is number "+num])
                 }}>create todo</button>
-                <button onClick={() => this.takeAction("delete",[this.state.deleteId])}>delete todo</button>
+                <button onClick={() => this.takeAction("destroy",[this.state.deleteId])}>destroy todo</button>
                 <input type="text" onChange={e => {
                     this.setState({
                         deleteId: Number.parseInt(e.target.value)
