@@ -1,0 +1,99 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Nov 14 21:27:58 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "complete",
+            "base": "",
+            "fields": [
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint32"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "destroy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "todo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "name": "completed",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "complete",
+            "type": "complete",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "destroy",
+            "type": "destroy",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "tood",
+            "type": "todo",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
